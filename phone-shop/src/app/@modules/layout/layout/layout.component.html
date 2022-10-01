@@ -1,0 +1,15 @@
+<section id="layout">
+    <!-- Navbar -->
+    <app-nav-bar></app-nav-bar>
+    <hr>
+    
+    <router-outlet></router-outlet>
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+</section>
+
+<div *ngIf="windowScrolled" class="hidden to-top md:block" (click)="scrollToTop()">
+    <img src="/assets/images/icon-arrow-up.svg" class="w-7 bg-gray-400 rounded-sm hover:opacity-75"/>
+</div>
+    
